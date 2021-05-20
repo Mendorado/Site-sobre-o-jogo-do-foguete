@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+		var nome = prompt('Escreva seu nome')
+		alert(`Seja Bem-vindo ${nome} `)
+		var conta = prompt("Escreva 'S' para soma, 'D' para divisão, 'M' para multiplicação e 'L' para subtração")
+		if (['S', 's', '+'].includes(conta)) {
+			let s1 = parseInt(prompt('Escreva o primeiro número'))
+			let s2 = parseInt(prompt('Escreva o segundo número'))
+			let soma = s1 + s2
+			alert(`O resultado é ${soma} `)
+		} else if (['D', 'd', '/'].includes(conta)) {
+			let d1 = parseInt(prompt('Escreva o primeiro número'))
+			let d2 = parseInt(prompt('Escreva o segundo número'))
+			let divisao = d1/d2
+			alert(`O resultado é ${divisao} `)
+		} else if (['M', 'm', '*', 'x'].includes(conta)) {
+			let m1 = parseInt(prompt('Escreva o primeiro número'))
+			let m2 = parseInt(prompt('Escreva o segundo número'))
+			let multiplicacao = m1 * m2
+			alert(`O resultado é ${multiplicacao} `)
+		} else if (['L', 'l', '-'].includes(conta)) {
+			let l1 = parseInt(prompt('Escreva o primeiro número'))
+			let l2 = parseInt(prompt('Escreva o segundo número'))
+			let subtracao = l1 - l2
+			alert(`O resultado é ${subtracao} `)
+		} else {
+			alert('Coloque uma variável verdadeira!')
+		}
+		</script>
+	</body>
+</html>
